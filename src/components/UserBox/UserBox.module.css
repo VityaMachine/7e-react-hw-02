@@ -1,0 +1,40 @@
+.userBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 44px;
+}
+
+.userData {
+  margin-left: 20px;
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.userNameDark {
+  composes: userName;
+  color: #fff;
+}
+
+.userNameLight {
+  composes: userName;
+  color: #222133;
+}
+
+.userEmail {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.userEmailDark {
+  composes: userEmail;
+  color: #c0bfbd;
+}
+
+.userEmailLight {
+  composes: userEmail;
+  color: #7c7c7a;
+}

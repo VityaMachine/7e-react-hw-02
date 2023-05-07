@@ -1,0 +1,74 @@
+.menuList {
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.menuListItem {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.menuLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.menuLinkDark {
+  composes: menuLink;
+  color: #c0bfbd;
+}
+
+.menuLinkDark:hover {
+  color: #a492ff;
+}
+
+.menuLinkLight {
+  composes: menuLink;
+  color: #7c7c7a;
+}
+
+.menuLinkLight:hover {
+  color: #4a49cb;
+}
+
+.menuLinkText {
+  margin-left: 30px;
+}
+
+/* SVG */
+
+.svgIcon {
+  min-width: 24px;
+  height: 24px;
+}
+
+.svgIconDark {
+  composes: svgIcon;
+}
+
+.svgIconLight {
+  composes: svgIcon;
+}
+
+.svgIconDark * {
+  stroke: #c0bfbd;
+}
+
+.svgIconLight * {
+  stroke: #7c7c7a;
+}
+
+.menuLinkDark:hover > .svgIcon * {
+  stroke: #a492ff;
+}
+
+.menuLinkLight:hover > .svgIcon * {
+  stroke: #4a49cb;
+}

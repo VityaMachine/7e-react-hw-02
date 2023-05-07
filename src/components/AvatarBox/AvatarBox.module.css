@@ -1,0 +1,31 @@
+.avatarBox {
+  min-width: 44px;
+  height: 44px;
+  margin-left: 30px;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+}
+
+.avatarText {
+  composes: avatarImg;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.avatarTextDark {
+  composes: avatarText;
+  background-color: #a492ff;
+}
+
+.avatarTextLight {
+  composes: avatarText;
+  background-color: #4a49cb;
+}
